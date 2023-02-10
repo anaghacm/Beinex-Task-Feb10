@@ -2,6 +2,9 @@
 
 .tradition-module{
     text-align: center;
+    .heading{
+        padding-bottom: $spacer-4;
+    }
 
     .main-heading{
         font-size: $font-heading;

@@ -1,4 +1,5 @@
 @import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
 
 .tradition{
     .row{
@@ -36,6 +37,15 @@
             &:hover{
                 background-color: $color-green;
             }
+        }
+    }
+}
+
+@include tablet{
+    .tradition{
+        .text-col{
+            text-align: center;
+            padding: $spacer-2 50px;
         }
     }
 }

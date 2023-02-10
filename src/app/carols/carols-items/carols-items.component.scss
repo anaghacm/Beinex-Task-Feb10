@@ -1,4 +1,5 @@
 @import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
 
 .carols{
     .row{
@@ -36,6 +37,18 @@
             &:hover{
                 background-color: $color-green;
             }
+        }
+    }
+}
+
+@include tablet{
+    .carols{
+        .row{
+            align-items: center;
+        }
+        .text-col{
+            text-align: center;
+            padding: $spacer-2 50px;
         }
     }
 }
