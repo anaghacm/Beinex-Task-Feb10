@@ -1,0 +1,21 @@
+@import '../../../assets/scss/variables';
+
+.cards-module{
+    .card{
+        border: none;
+        color: $color-green;
+        font-family: 'Rosario', sans-serif;
+    }
+    .category{
+        color: $color-red;
+        font-size: $font-sm;
+        letter-spacing: 2px;
+    }
+    .card-title{
+        font-size: $font-subheading;
+        font-family: 'Abril Fatface', cursive;
+    }
+    .card-text{
+        font-size: $font-sm;
+    }
+}

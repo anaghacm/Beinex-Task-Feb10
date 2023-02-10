@@ -1,0 +1,23 @@
+@import '../../assets/scss/variables';
+
+.navbar{
+    font-family: 'Yeseva One', cursive;
+    font-size: $font-xsm;
+    padding: $spacer-0;
+    margin: $spacer-0;
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fffd;
+
+    .nav-link{
+        color: $color-green;
+        &:hover{
+            color: $color-red;
+        }
+    }
+    .active{
+        color: $color-red;
+    }
+}

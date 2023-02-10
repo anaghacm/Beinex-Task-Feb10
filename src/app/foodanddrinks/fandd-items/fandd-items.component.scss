@@ -1,0 +1,41 @@
+@import '../../../assets/scss/variables';
+
+.foodanddrinks{
+    .row{
+        margin-bottom: $spacer-3;
+    }
+    .date-col{
+        border-top: 1px solid $color-green;
+        text-align: right;
+        color: $color-red;
+    }
+    .text-col{
+        color: $color-green;
+        text-align: left;
+        padding-right: $spacer-4;
+        padding-left: $spacer-4;
+    
+        .heading{
+            font-size: $font-subheading;
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 500;
+            line-height: 36px;
+            padding-bottom: $spacer-2;
+        }
+        .content{
+            font-size: $font-md;
+            font-family: 'Rosario', sans-serif;
+            padding-bottom: $spacer-2
+        }
+        .btn-read{
+            background-color: $color-red;
+            color: $color-white;
+            padding: $spacer-md $spacer-2;
+            border-radius: 0;
+
+            &:hover{
+                background-color: $color-green;
+            }
+        }
+    }
+}

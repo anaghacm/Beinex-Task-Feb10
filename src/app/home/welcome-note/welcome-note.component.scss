@@ -1,0 +1,26 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.welcome-module{
+    padding: $spacer-0 $spacer-4;
+    text-align: center;
+    color: $color-green;
+    .welcome-head{
+        font-size: $font-heading;
+        font-family: 'Abril Fatface', cursive;
+        padding-bottom: $spacer-3;
+        line-height: 60px;
+    }
+    .welcome-text{
+        font-size: $font-md;
+        font-family: 'Rosario', sans-serif;
+    }
+}
+
+@include mobile{
+    .welcome-module{
+        .welcome-head{
+            font-size: 40px;
+        }
+    }
+}

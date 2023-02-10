@@ -1,0 +1,54 @@
+@import '../../../assets/scss/variables';
+
+.mail-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    padding-top: $spacer-2;
+
+    .card {
+        border: none;
+        margin: auto;
+        font-family: 'Rosario', sans-serif;
+    }
+    .card-image{
+        width: 75%;
+        margin: auto;
+    }
+    .card-tag{
+        font-size: $font-sm;
+        color: $color-red;
+        letter-spacing: 2px;
+        padding-bottom: $spacer-1;
+    }
+    .card-title{
+        font-size: 30px;
+        font-family: 'Abril Fatface', cursive;
+        color: $color-green;
+        padding-bottom: $spacer-2;
+    }
+    .form-control{
+        margin-bottom: $spacer-2;
+        border-radius: 0;
+
+        &.input-mail{
+            border: 1px solid $color-green;
+            &::placeholder{
+                color: $color-green;
+            }
+        }
+
+        &.btn-submit{
+            background-color: $color-green;
+            color: $color-white;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .card-text{
+        font-size: $font-sm;
+        padding-bottom: $spacer-md;
+    }
+    
+
+}

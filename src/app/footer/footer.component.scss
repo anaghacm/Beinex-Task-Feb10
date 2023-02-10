@@ -1,0 +1,42 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.footer-module{
+    background-image:linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../../assets/images/footer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $spacer-2 $spacer-0;
+
+    .copy-right{
+        opacity: 0.7;
+    }
+    .socialmedia{
+        padding: $spacer-0 $spacer-2;
+        font-size: $font-lg;
+        color: $color-black;
+        opacity: 0.5;
+
+        &:hover{
+            color: $color-red;
+            opacity: 1;
+        }
+    }
+}
+
+@include tablet{
+    .footer-module{
+        .copy-right{
+            text-align: center;
+        }
+    }
+}
+
+@include mobile{
+    .footer-module{
+        .footer-content{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}

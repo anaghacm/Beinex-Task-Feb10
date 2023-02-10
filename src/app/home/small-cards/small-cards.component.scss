@@ -1,0 +1,28 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.card-base{
+    .main-head{
+        font-size: $font-lg;
+        font-family: 'Rosario', sans-serif;
+        padding-bottom: $spacer-3;
+        color: $color-red;
+        font-weight: 600;
+    }
+    .card{
+        border: none;
+    }
+    .card-title{
+        font-size: $font-md;
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
+@include mobile{
+    .card-base{
+        text-align: center;
+        .card{
+            margin: auto;
+        }
+    }
+}
