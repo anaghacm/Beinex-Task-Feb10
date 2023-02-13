@@ -4,6 +4,7 @@ import { CarolsHomeComponent } from './carols/carols-home/carols-home.component'
 import { CarolslistHomeComponent } from './carolsList/carolslist-home/carolslist-home.component';
 import { FanddHomeComponent } from './foodanddrinks/fandd-home/fandd-home.component';
 import { HomepageComponent } from './home/homepage/homepage.component';
+import { ReportsComponent } from './reports/reports.component';
 import { TraditionHomeComponent } from './tradition/tradition-home/tradition-home.component';
 
 const routes: Routes = [
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path:'carolslist', component:CarolslistHomeComponent
+  },
+  {
+    path:'reports', component:ReportsComponent
   }
 ];
 

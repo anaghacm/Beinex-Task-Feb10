@@ -9,8 +9,15 @@
         color: $color-red;
         font-weight: 600;
     }
+    a{
+        text-decoration: none;
+    }
     .card{
         border: none;
+        color: $color-green;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
     }
     .card-title{
         font-size: $font-md;

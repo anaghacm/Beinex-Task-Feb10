@@ -21,6 +21,7 @@ import { CarolsHomeComponent } from './carols/carols-home/carols-home.component'
 import { CarolsItemsComponent } from './carols/carols-items/carols-items.component';
 import { CarolslistHomeComponent } from './carolsList/carolslist-home/carolslist-home.component';
 import { CarolslistTableComponent } from './carolsList/carolslist-table/carolslist-table.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CarolslistTableComponent } from './carolsList/carolslist-table/carolsli
     CarolsHomeComponent,
     CarolsItemsComponent,
     CarolslistHomeComponent,
-    CarolslistTableComponent
+    CarolslistTableComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,

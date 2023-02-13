@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fandd-items',
@@ -14,9 +15,11 @@ export class FanddItemsComponent implements OnInit {
   public content1: string = "A toast! A toast! Cheers to your health this holiday, with classics like spiked eggnog, mulled wine, candy cane martinis; the list goes on and on—actually why not drink it all in?";
   public content2: string = 'From gingerbread to gingersnaps, shortbread to sugar cookies, Christmas cookies can make (or bake) the holidays. Get your seasonal fix with our 19 classic treats.';
   public btnclass:string='btn btn-read'
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit(): void {
   }
-
+  viewReport() {
+    this.router.navigateByUrl('/reports');
+  }
 }

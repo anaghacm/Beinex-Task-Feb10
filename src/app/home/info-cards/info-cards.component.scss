@@ -1,6 +1,9 @@
 @import '../../../assets/scss/variables';
 
 .cards-module{
+    a{
+        text-decoration: none;
+    }
     .card{
         border: none;
         color: $color-green;

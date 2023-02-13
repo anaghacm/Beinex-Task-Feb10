@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables';
+
+.report-module{
+    padding-top: $spacer-0;
+    .image-div{
+        background-image: url('../../assets/images/reportcookies.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+    .report-div{
+        text-align: center;
+        padding: $spacer-4 $spacer-0;
+        margin-top: -100px;
+        background-color:#fffc;
+    }
+    .category{
+        color: $color-red;
+        font-size: $font-sm;
+        letter-spacing: 2px;
+    }
+    .heading{
+        font-size: $font-subheading;
+        font-family: 'Abril Fatface', cursive;
+        padding-bottom: $spacer-2;
+    }
+    .content{
+        text-align: left;
+        font-family: 'Rosario', sans-serif;
+        font-size: $font-sm;
+        letter-spacing: 1px;
+        padding-top: $spacer-3;
+    }
+}
