@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variables';
+
+.carolslist-module{
+    text-align: center;
+    .heading{
+        padding-bottom: $spacer-4;
+    }
+    .main-heading{
+        font-size: $font-heading;
+        color: $color-green;
+        font-weight: 500;
+        font-family: 'Abril Fatface', cursive;
+        line-height: 60px;
+    }
+    .sub-heading{
+        font-size: $font-lg;
+        color: $color-red;
+        font-weight: 400;
+        font-family: 'Rosario', sans-serif;
+        font-style: italic;
+        padding: $spacer-2 $spacer-0;
+    }
+}

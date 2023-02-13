@@ -19,6 +19,8 @@ import { FanddItemsComponent } from './foodanddrinks/fandd-items/fandd-items.com
 import { FanddHomeComponent } from './foodanddrinks/fandd-home/fandd-home.component';
 import { CarolsHomeComponent } from './carols/carols-home/carols-home.component';
 import { CarolsItemsComponent } from './carols/carols-items/carols-items.component';
+import { CarolslistHomeComponent } from './carolsList/carolslist-home/carolslist-home.component';
+import { CarolslistTableComponent } from './carolsList/carolslist-table/carolslist-table.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { CarolsItemsComponent } from './carols/carols-items/carols-items.compone
     FanddItemsComponent,
     FanddHomeComponent,
     CarolsHomeComponent,
-    CarolsItemsComponent
+    CarolsItemsComponent,
+    CarolslistHomeComponent,
+    CarolslistTableComponent
   ],
   imports: [
     BrowserModule,

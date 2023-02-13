@@ -1,0 +1,51 @@
+<div class="xmassongs">
+    <p [class]="textClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit earum consequatur
+        distinctio alias?
+        Consequatur quisquam quas, perferendis adipisci dignissimos repellendus dolores laboriosam placeat impedit error
+        tempora non consectetur quia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore tenetur est
+        aspernatur dicta atque. Autem iste pariatur laboriosam consequatur eum delectus tempora ut praesentium. Minima
+        debitis soluta asperiores ea quaerat?</p>
+    <p [class]="textClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit earum consequatur
+        distinctio alias?
+        Consequatur quisquam quas, perferendis adipisci dignissimos repellendus dolores laboriosam placeat impedit error
+        tempora non consectetur quia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, fugit voluptate?
+    </p>
+    <p [class]="textClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit earum consequatur
+        distinctio alias?
+        Consequatur quisquam quas, perferendis adipisci dignissimos repellendus dolores laboriosam placeat impedit error
+        tempora non consectetur quia?</p>
+
+    <button class="btn btn-songs" (click)="displayTable()">{{songsBtn}}</button>
+
+    <div class="table-div" *ngIf="tableDisplay">
+        <h4 class="table-heading">X-mas Songs Collection</h4>
+        <table class="table table-sm songs-table">
+            <thead>
+                <tr class="table-title">
+                    <th class="data-center">SL NO.</th>
+                    <th>TITLE</th>
+                    <th>ARTIST</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr class="table-data" *ngFor="let song of songList">
+                    <td class="data-center" [ngClass]="{'new-style':newStyleCol1}">{{song.id}}</td>
+                    <td [ngClass]="{'new-style':newStyleCol2}">{{song.title}}</td>
+                    <td [ngClass]="{'new-style':newStyleCol3}">{{song.artist}}</td>
+                </tr>
+            </tbody>
+            <tfoot class="change-style">
+                <tr>
+                    <td class="data-center"><button class="btn styleBtn" (click)="changeStyle(1)"><i
+                                class="fa-regular fa-pen-to-square"></i></button></td>
+                    <td><button class="btn styleBtn" (click)="changeStyle(2)"><i
+                                class="fa-regular fa-pen-to-square"></i></button></td>
+                    <td><button class="btn styleBtn" (click)="changeStyle(3)"><i
+                                class="fa-regular fa-pen-to-square"></i></button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+</div>
